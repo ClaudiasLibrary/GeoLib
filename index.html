@@ -7,14 +7,21 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="GeoLib - A platform to manage and discover private book collections through geolocation." />
+  <meta name="author" content="GeoLib Project" />
 
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" />
 
-  <!-- Google Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <style>
+  <!-- Leaflet Map CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
 
+  <style>
     body {
       margin: 0;
       font-family: "Inter", sans-serif;
@@ -24,48 +31,57 @@
 
     header {
       background: white;
-      border-bottom: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e4e7ec;
       padding: 16px 40px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .logo span {
+      color: #3b82f6;
     }
 
     nav a {
       margin-left: 24px;
       text-decoration: none;
-      color: #374151;
+      color: #34495e;
       font-size: 14px;
       font-weight: 500;
     }
 
     nav a:hover {
-      color: #2563eb;
+      color: #3b82f6;
     }
 
-    main {
-      max-width: 900px;
-      margin: auto;
+    .hero {
       padding: 80px 20px;
       text-align: center;
+      max-width: 900px;
+      margin: auto;
     }
 
-    h1 {
-      font-size: 38px;
-      font-weight: 600;
+    .hero h1 {
+      font-size: 40px;
       margin-bottom: 20px;
+      font-weight: 600;
     }
 
-    p {
+    .hero p {
       font-size: 18px;
       color: #6b7280;
       line-height: 1.6;
       margin-bottom: 30px;
     }
 
-    .button {
-      display: inline-block;
-      background: #2563eb;
+    .cta-button {
+      background: #3b82f6;
       color: white;
       padding: 12px 28px;
       border-radius: 6px;
@@ -74,30 +90,27 @@
       font-size: 15px;
     }
 
-    .button:hover {
-      background: #1d4ed8;
-    }
-
-    #root {
-      margin-top: 60px;
+    .cta-button:hover {
+      background: #2563eb;
     }
 
     footer {
       text-align: center;
       padding: 30px;
       margin-top: 80px;
-      border-top: 1px solid #e5e7eb;
+      border-top: 1px solid #e4e7ec;
       font-size: 14px;
       color: #6b7280;
       background: white;
     }
-
   </style>
 </head>
 
 <body>
 
   <header>
+    <div class="logo">Geo<span>Lib</span></div>
+
     <nav>
       <a href="#">Home</a>
       <a href="#">Explore</a>
@@ -108,16 +121,19 @@
 
   <main>
 
-    <h1>GeoLib</h1>
+    <section class="hero">
+      <h1>Discover Private Book Collections</h1>
 
-    <p>
-      GeoLib is a prototype web platform designed to manage personal book
-      collections and explore nearby libraries through geolocation.
-    </p>
+      <p>
+        GeoLib is a prototype web platform designed to help users manage
+        personal book collections and discover nearby libraries using
+        geolocation technologies.
+      </p>
 
-    <a class="button" href="#">Explore the Map</a>
+      <a class="cta-button" href="#">Explore the Map</a>
+    </section>
 
-    <!-- React mounts here -->
+    <!-- React app will mount here -->
     <div id="root"></div>
 
   </main>
