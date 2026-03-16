@@ -1,4 +1,5 @@
-# GeoLib
+
+# ![GeoLib](client/public/favicon.ico)  GeoLib
 
 GeoLib is a prototype web application designed to manage and explore small private book collections.  
 The system allows users to catalog their books, explore nearby collections through geolocation, and view usage statistics.
