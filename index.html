@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>GeoLib</title>
+  <title>GeoLib – Private Library Network</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GeoLib - A platform to manage and discover private book collections through geolocation." />
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #374151;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 38px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #6b7280;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    #root {
+      margin-top: 60px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 80px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+      color: #6b7280;
+      background: white;
+    }
+
+  </style>
 </head>
+
 <body>
-  <div id="root"></div>
+
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Explore</a>
+      <a href="#">Collections</a>
+      <a href="#">Statistics</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>GeoLib</h1>
+
+    <p>
+      GeoLib is a prototype web platform designed to manage personal book
+      collections and explore nearby libraries through geolocation.
+    </p>
+
+    <a class="button" href="#">Explore the Map</a>
+
+    <!-- React mounts here -->
+    <div id="root"></div>
+
+  </main>
+
+  <footer>
+    GeoLib Project — Academic Prototype | Web Technologies and Database Systems
+  </footer>
+
 </body>
+
 </html>
