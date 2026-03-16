@@ -1,1 +1,48 @@
-
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .book-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .book-card {
+    background: white;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 180px;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+  }
+  
+  .navbar a:hover {
+    color: #2563eb;
+  }
