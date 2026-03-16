@@ -1,0 +1,17 @@
+{
+  "name": "GeoLib - Private Library Network",
+  "short_name": "GeoLib",
+  "description": "Web application prototype for managing and discovering private book collections through geolocation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
