@@ -89,41 +89,6 @@ The system collects basic metrics such as:
 
 ---
 
-## Database Structure
-
-Main entities:
-
-### Users
-id
-username
-email
-password_hash
-description
-location (geospatial)
-
-### Books
-id
-user_id
-title
-author
-year
-category
-cover_image
-created_at
-
-### Views
-id
-book_id
-timestamp
-
-### Loans
-id
-book_id
-requester_id
-status
-
----
-
 ## Installation
 
 ### Requirements
